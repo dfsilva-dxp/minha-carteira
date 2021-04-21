@@ -22,6 +22,7 @@ export const Header = styled.header`
       justify-content: center;
       font-size: 1.75rem;
       border: 2px solid ${({ theme }) => theme.colors.green};
+      color: ${({ theme }) => theme.colors.green};
     }
 
     p {

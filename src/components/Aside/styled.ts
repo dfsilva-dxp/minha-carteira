@@ -16,7 +16,7 @@ export const Aside = styled.aside`
   nav {
     width: 100%;
     padding: 2.5rem 0;
-    ul li {
+    ul li a {
       position: relative;
       height: 3.25rem;
       font-size: 1.5rem;

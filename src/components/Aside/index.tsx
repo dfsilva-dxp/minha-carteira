@@ -18,51 +18,70 @@ export function Aside() {
       </div>
       <nav>
         <ul>
-          <li className="active">
-            <TiChartAreaOutline data-tip data-for="dashboard" />
-            <ReactTooltip
-              id="dashboard"
-              place="right"
-              type="dark"
-              effect="float"
-            >
-              Dashboard
-            </ReactTooltip>
+          <li>
+            <a href="#" className="active">
+              <TiChartAreaOutline data-tip data-for="dashboard" />
+              <ReactTooltip
+                id="dashboard"
+                place="right"
+                type="dark"
+                effect="float"
+              >
+                Dashboard
+              </ReactTooltip>
+            </a>
           </li>
           <li>
-            <MdAttachMoney data-tip data-for="register" />
-            <ReactTooltip
-              id="register"
-              place="right"
-              type="dark"
-              effect="float"
-            >
-              Novo Regístro
-            </ReactTooltip>
+            <a href="#">
+              <MdAttachMoney data-tip data-for="register" />
+              <ReactTooltip
+                id="register"
+                place="right"
+                type="dark"
+                effect="float"
+              >
+                Novo Regístro
+              </ReactTooltip>
+            </a>
           </li>
           <li>
-            <TiArrowUpOutline data-tip data-for="deposit" />
-            <ReactTooltip id="deposit" place="right" type="dark" effect="float">
-              Entradas
-            </ReactTooltip>
+            <a href="#">
+              <TiArrowUpOutline data-tip data-for="deposit" />
+              <ReactTooltip
+                id="deposit"
+                place="right"
+                type="dark"
+                effect="float"
+              >
+                Entradas
+              </ReactTooltip>
+            </a>
           </li>
           <li>
-            <TiArrowDownOutline data-tip data-for="withdraw" />
-            <ReactTooltip
-              id="withdraw"
-              place="right"
-              type="dark"
-              effect="float"
-            >
-              Saídas
-            </ReactTooltip>
+            <a href="#">
+              <TiArrowDownOutline data-tip data-for="withdraw" />
+              <ReactTooltip
+                id="withdraw"
+                place="right"
+                type="dark"
+                effect="float"
+              >
+                Saídas
+              </ReactTooltip>
+            </a>
           </li>
-
           <li>
-            <TiPower data-tip data-for="logout" />
-            <ReactTooltip id="logout" place="right" type="dark" effect="float">
-              Logout
-            </ReactTooltip>
+            <a href="#">
+              <TiPower data-tip data-for="logout" />
+              <ReactTooltip
+                id="logout"
+                place="right"
+                type="dark"
+                effect="float"
+              >
+                Logout
+              </ReactTooltip>
+            </a>
           </li>
         </ul>
       </nav>

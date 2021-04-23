@@ -19,7 +19,7 @@ export function Aside() {
       <nav>
         <ul>
           <li>
-            <a href="#" className="active">
+            <a className="active">
               <TiChartAreaOutline data-tip data-for="dashboard" />
               <ReactTooltip
                 id="dashboard"
@@ -32,7 +32,7 @@ export function Aside() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a>
               <MdAttachMoney data-tip data-for="register" />
               <ReactTooltip
                 id="register"
@@ -45,7 +45,7 @@ export function Aside() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a>
               <TiArrowUpOutline data-tip data-for="deposit" />
               <ReactTooltip
                 id="deposit"
@@ -58,7 +58,7 @@ export function Aside() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a>
               <TiArrowDownOutline data-tip data-for="withdraw" />
               <ReactTooltip
                 id="withdraw"
@@ -71,7 +71,7 @@ export function Aside() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a>
               <TiPower data-tip data-for="logout" />
               <ReactTooltip
                 id="logout"

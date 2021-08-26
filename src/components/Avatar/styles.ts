@@ -4,6 +4,7 @@ export const Wrapper = styled.span`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 2.5rem;
 
   span:last-child {
     margin-left: 1rem;

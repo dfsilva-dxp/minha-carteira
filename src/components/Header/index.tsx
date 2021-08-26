@@ -1,5 +1,7 @@
 import Avatar from "../Avatar";
+import ToggleButtonTheme from "../ToggleButtonTheme";
 import TransactionButton from "../TransactionButton";
+
 import * as S from "./styles";
 
 const Header = () => {
@@ -7,6 +9,7 @@ const Header = () => {
     <S.Header>
       <TransactionButton />
       <S.Wrap>
+        <ToggleButtonTheme />
         <Avatar name="Daniel Silva" />
       </S.Wrap>
     </S.Header>

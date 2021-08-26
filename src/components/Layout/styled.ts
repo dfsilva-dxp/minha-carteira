@@ -13,17 +13,14 @@ export const Grid = styled.main`
 `;
 
 export const Header = styled.header`
-  border: 1px solid #000;
   grid-area: H;
 `;
 
 export const Aside = styled.aside`
-  border: 1px solid #000;
   grid-area: AS;
 `;
 
 export const Content = styled.section`
-  border: 1px solid #000;
   grid-area: S;
 
   overflow-x: hidden;

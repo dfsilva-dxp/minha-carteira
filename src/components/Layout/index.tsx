@@ -1,5 +1,4 @@
 import { ReactElement } from "react";
-
 import * as S from "./styled";
 
 type LayoutProps = {

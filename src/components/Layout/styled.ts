@@ -12,10 +12,6 @@ export const Grid = styled.main`
     "AS S";
 `;
 
-export const Aside = styled.aside`
-  grid-area: AS;
-`;
-
 export const Content = styled.section`
   grid-area: S;
 

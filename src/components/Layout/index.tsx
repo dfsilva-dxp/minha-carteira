@@ -1,5 +1,7 @@
 import { ReactElement } from "react";
+
 import Header from "../Header";
+import Sidebar from "../Sidebar";
 import * as S from "./styled";
 
 type LayoutProps = {
@@ -10,7 +12,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <S.Grid>
       <Header />
-      <S.Aside>AS</S.Aside>
+      <Sidebar />
       <S.Content>{children}</S.Content>
     </S.Grid>
   );

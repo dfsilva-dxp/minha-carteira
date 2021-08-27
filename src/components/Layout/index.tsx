@@ -1,6 +1,7 @@
 import { ReactElement } from "react";
 
 import Header from "../Header";
+import HeaderTitleAndFilter from "../HeaderTitleAndFilter";
 import Sidebar from "../Sidebar";
 import * as S from "./styled";
 
@@ -13,7 +14,11 @@ const Layout = ({ children }: LayoutProps) => {
     <S.Grid>
       <Header />
       <Sidebar />
-      <S.Content>{children}</S.Content>
+
+      <S.Content>
+        <HeaderTitleAndFilter title="Dashboard" />
+        {children}
+      </S.Content>
     </S.Grid>
   );
 };

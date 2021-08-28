@@ -1,7 +1,6 @@
 import { ReactElement } from "react";
 
 import Header from "../Header";
-import PageContentTitle from "../PageContentTitle";
 import Sidebar from "../Sidebar";
 
 import * as S from "./styled";
@@ -16,10 +15,7 @@ const Layout = ({ children }: LayoutProps) => {
       <Header />
       <Sidebar />
 
-      <S.Content>
-        <PageContentTitle title="Dashboard" />
-        {children}
-      </S.Content>
+      <S.Content>{children}</S.Content>
     </S.Grid>
   );
 };

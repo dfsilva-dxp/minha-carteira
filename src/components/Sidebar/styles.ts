@@ -38,12 +38,13 @@ export const Nav = styled.nav`
     &:hover {
       background: ${({ theme }) => theme.color.background};
       position: relative;
+      color: ${({ theme }) => theme.color.green300};
 
       &::after {
         content: "";
         width: 2px;
         height: 100%;
-        background: ${({ theme }) => theme.color.green500};
+        background: ${({ theme }) => theme.color.green300};
         position: absolute;
         left: 0;
       }

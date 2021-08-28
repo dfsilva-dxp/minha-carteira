@@ -15,7 +15,7 @@ export const Avatar = styled.span`
   width: 3.25rem;
   height: 3.25rem;
   border-radius: 3.5rem;
-  border: 2px solid ${({ theme }) => theme.color.green500};
+  border: 2px solid ${({ theme }) => theme.color.green300};
   font-size: 1.125rem;
   font-weight: 400;
 

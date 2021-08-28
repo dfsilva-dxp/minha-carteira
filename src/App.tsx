@@ -1,6 +1,7 @@
 import { ThemeProvider } from "styled-components";
 
 import Layout from "./components/Layout";
+import Dashboard from "./pages/Dashboard";
 
 import { GlobalStyles } from "./styles/global";
 import { dark } from "./styles/themes/dark";
@@ -10,7 +11,7 @@ function App() {
     <ThemeProvider theme={dark}>
       <GlobalStyles />
       <Layout>
-        <p>Content</p>
+        <Dashboard />
       </Layout>
     </ThemeProvider>
   );

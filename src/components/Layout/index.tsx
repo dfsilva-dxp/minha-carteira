@@ -1,8 +1,9 @@
 import { ReactElement } from "react";
 
 import Header from "../Header";
-import HeaderTitleAndFilter from "../HeaderTitleAndFilter";
+import PageContentTitle from "../PageContentTitle";
 import Sidebar from "../Sidebar";
+
 import * as S from "./styled";
 
 type LayoutProps = {
@@ -16,7 +17,7 @@ const Layout = ({ children }: LayoutProps) => {
       <Sidebar />
 
       <S.Content>
-        <HeaderTitleAndFilter title="Dashboard" />
+        <PageContentTitle title="Dashboard" />
         {children}
       </S.Content>
     </S.Grid>

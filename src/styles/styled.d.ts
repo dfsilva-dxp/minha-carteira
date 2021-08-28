@@ -9,9 +9,11 @@ declare module "styled-components" {
       text: string;
       shape: string;
 
+      black: string;
       white: string;
       gray400: string;
       blue700: string;
+      green300: string;
       green500: string;
       yellow500: string;
       red500: string;

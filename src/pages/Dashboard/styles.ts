@@ -11,7 +11,6 @@ export const Container = styled.section`
 
   grid-template-areas:
     "HEADER   HEADER    HEADER"
-    "WELCOME  WELCOME   FILTER"
     "BALANCE  DEPOSIT   WITHDRAWL"
     "STORY    STORY     STORY"
     "WRAP     WRAP      WRAP";

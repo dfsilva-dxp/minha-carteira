@@ -4,11 +4,11 @@ import Layout from "./components/Layout";
 import Dashboard from "./pages/Dashboard";
 
 import { GlobalStyles } from "./styles/global";
-import { dark } from "./styles/themes/dark";
+import { light } from "./styles/themes/light";
 
 function App() {
   return (
-    <ThemeProvider theme={dark}>
+    <ThemeProvider theme={light}>
       <GlobalStyles />
       <Layout>
         <Dashboard />

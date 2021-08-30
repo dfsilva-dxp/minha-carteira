@@ -1,3 +1,4 @@
+import Filter from "../Filter";
 import * as S from "./styles";
 
 type PageContentTitleProps = {
@@ -6,9 +7,10 @@ type PageContentTitleProps = {
 
 const PageContentTitle = ({ title }: PageContentTitleProps) => {
   return (
-    <S.Title>
+    <S.Wapper>
       <h2>{title}</h2>
-    </S.Title>
+      <Filter />
+    </S.Wapper>
   );
 };
 

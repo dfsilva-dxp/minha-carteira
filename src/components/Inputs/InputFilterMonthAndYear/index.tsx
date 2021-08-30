@@ -1,7 +1,16 @@
+import { SyntheticEvent } from "react";
 import * as S from "./styles";
 
-const InputFilterMonthAndYear = () => {
-  return <S.Input type="month" />;
+type InputFilterMonthAndYearProps = {
+  value: string;
+  handleChange: (event: SyntheticEvent) => void;
+};
+
+const InputFilterMonthAndYear = ({
+  value,
+  handleChange,
+}: InputFilterMonthAndYearProps) => {
+  return <S.Input type="month" value={value} onChange={handleChange} />;
 };
 
 export default InputFilterMonthAndYear;

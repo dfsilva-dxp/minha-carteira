@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
-export const Title = styled.header`
+export const Wapper = styled.header`
   width: 100%;
   height: 5rem;
+  padding: 1rem 0;
 
   grid-area: HEADER;
   display: flex;
-  align-items: center;
+
+  div {
+    margin-left: auto;
+  }
 `;

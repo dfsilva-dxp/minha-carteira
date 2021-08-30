@@ -24,6 +24,10 @@ export const FilterButton = styled.span`
     text-transform: capitalize;
   }
 
+  svg {
+    font-size: 1.25rem;
+  }
+
   svg.rotate-in {
     animation: rotateIn 0.2s linear 0.1s 1 normal forwards;
   }

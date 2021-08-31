@@ -1,7 +1,7 @@
 import { ThemeProvider } from "styled-components";
 
 import Layout from "./components/Layout";
-import Dashboard from "./pages/Dashboard";
+import Transactions from "./pages/Transactions";
 
 import { GlobalStyles } from "./styles/global";
 import { light } from "./styles/themes/light";
@@ -11,7 +11,7 @@ function App() {
     <ThemeProvider theme={light}>
       <GlobalStyles />
       <Layout>
-        <Dashboard />
+        <Transactions />
       </Layout>
     </ThemeProvider>
   );

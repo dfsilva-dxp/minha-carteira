@@ -4,12 +4,12 @@ const RadioButtonTransactionType = () => {
   return (
     <S.Container>
       <S.Wrapper>
-        <input type="radio" name="select" id="recurrent" />
-        <input type="radio" name="select" id="eventual" />
-        <S.Options htmlFor="recurrent" className="recurrent">
+        <S.Options htmlFor="recurrent" className="l-radio">
+          <input type="radio" id="recurrent" name="selector" />
           <span>Recorrentes</span>
         </S.Options>
-        <S.Options htmlFor="eventual" className="eventual">
+        <S.Options htmlFor="eventual" className="l-radio">
+          <input type="radio" id="eventual" name="selector" />
           <span>Eventuais</span>
         </S.Options>
       </S.Wrapper>

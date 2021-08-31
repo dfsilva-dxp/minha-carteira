@@ -16,42 +16,52 @@ export const Wrapper = styled.div`
   border-radius: 0.5rem;
   align-items: center;
   justify-content: space-evenly;
-
-  input[type="radio"] {
-    display: none;
-  }
-  #recurrent:checked:checked ~ .recurrent {
-    border-color: ${({ theme }) => theme.color.blue700};
-    background: ${({ theme }) => theme.color.blue700};
-  }
-  #recurrent:checked:checked ~ .recurrent span {
-    color: ${({ theme }) => theme.color.white};
-  }
-
-  #eventual:checked:checked ~ .eventual {
-    border-color: ${({ theme }) => theme.color.red500};
-    background: ${({ theme }) => theme.color.red500};
-  }
-
-  #eventual:checked:checked ~ .eventual span {
-    color: ${({ theme }) => theme.color.white};
-  }
 `;
 
 export const Options = styled.label`
-  background: ${({ theme }) => theme.color.background};
-  height: 100%;
-  width: 100%;
-  margin: 0 0.625rem;
-  padding: 0 0.625rem;
-  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 50px;
+  transition: background 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
   cursor: pointer;
-  font-size: 0.875rem;
-  font-weight: 600;
-  text-transform: uppercase;
-
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: space-evenly;
-  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus-within {
+    background: ${({ theme }) => theme.color.background};
+  }
+
+  input {
+    vertical-align: middle;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.625rem;
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-shadow: inset 0 0 0 1px ${({ theme }) => theme.color.background};
+    box-shadow: inset 0 0 0 1.5px ${({ theme }) => theme.color.background};
+    appearance: none;
+    transition: box-shadow 150ms cubic-bezier(0.95, 0.15, 0.5, 1.25);
+    pointer-events: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:checked {
+      box-shadow: inset 0 0 0 6px ${({ theme }) => theme.color.green300};
+    }
+  }
+
+  span {
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 1.25rem;
+    padding: 0 0.5rem;
+    font-weight: 600;
+  }
 `;

@@ -31,7 +31,7 @@ export const GlobalStyles = createGlobalStyle`
   textarea, 
   button,
   label {
-    font: 400 1rem/1rem "Roboto Mono", sans-serif;
+    font: 400 1rem/1rem "Roboto", sans-serif;
     outline: 0;
   }
 

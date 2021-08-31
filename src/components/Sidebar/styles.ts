@@ -16,7 +16,7 @@ export const Logo = styled.span`
   justify-content: center;
 
   img {
-    width: 100%;
+    width: 40%;
   }
 `;
 

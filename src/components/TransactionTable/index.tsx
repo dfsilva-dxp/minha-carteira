@@ -1,6 +1,20 @@
 import * as S from "./styles";
 
-const TransactionTable = () => {
+type Transaction = {
+  id: number;
+  title: string;
+  amount: number;
+  type: string;
+  category: string;
+  frequency: string;
+  create_at: string;
+};
+
+type TransactionTableProps = {
+  transactions: Transaction[];
+};
+
+const TransactionTable = ({ transactions }: TransactionTableProps) => {
   return (
     <S.Wrapper>
       <S.Table>
@@ -13,12 +27,15 @@ const TransactionTable = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td className="eventual">IPVA</td>
-            <td className="deposit">R$2500,00</td>
-            <td>Carro</td>
-            <td>31/08/2021</td>
-          </tr>
+          {transactions &&
+            transactions.map((item) => (
+              <tr key={item.id}>
+                <td className={item.frequency}>{item.title}</td>
+                <td className={item.type}>{item.amount}</td>
+                <td>{item.category}</td>
+                <td>{item.create_at}</td>
+              </tr>
+            ))}
         </tbody>
       </S.Table>
     </S.Wrapper>

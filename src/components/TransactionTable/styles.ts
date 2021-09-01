@@ -38,6 +38,10 @@ export const Table = styled.table`
 
       &.withdraw {
         color: ${({ theme }) => theme.color.red500};
+
+        &::before {
+          content: "-";
+        }
       }
 
       &:first-child.eventual,

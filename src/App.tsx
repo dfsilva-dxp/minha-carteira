@@ -1,6 +1,8 @@
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
+import TransactionContextProvider from "./contexts/TransactionContext";
+
 import Layout from "./components/Layout";
 import AppRoutes from "./routes";
 
@@ -12,9 +14,11 @@ function App() {
     <BrowserRouter>
       <ThemeProvider theme={light}>
         <GlobalStyles />
-        <Layout>
-          <AppRoutes />
-        </Layout>
+        <TransactionContextProvider>
+          <Layout>
+            <AppRoutes />
+          </Layout>
+        </TransactionContextProvider>
       </ThemeProvider>
     </BrowserRouter>
   );

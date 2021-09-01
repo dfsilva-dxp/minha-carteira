@@ -28,7 +28,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "generate": "yarn plop --plopfile generators/plopfile.js"
+    "generate": "yarn plop --plopfile generators/plopfile.js",
+    "server": "json-server src/api/server.json -w -d 750 -p 3333"
   },
   "eslintConfig": {
     "extends": [
@@ -51,6 +52,7 @@
   "devDependencies": {
     "@types/react-router-dom": "^5.1.8",
     "@types/styled-components": "^5.1.13",
+    "json-server": "^0.16.3",
     "plop": "^2.7.4"
   }
 }

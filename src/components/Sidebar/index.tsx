@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import ReactTooltip from "react-tooltip";
 import {
   TiArrowBackOutline,
@@ -13,14 +14,14 @@ const Sidebar = () => {
     <S.Aside>
       <S.Logo>
         <img
-          src="./images/logo.svg"
+          src="/images/logo.svg"
           alt="Imagem de uma carteira com o simbolo de moeda"
         />
       </S.Logo>
       <S.Nav>
         <ul>
           <li>
-            <a href="dashboard" data-tip data-for="dashboard">
+            <NavLink to="/dashboard" data-tip data-for="dashboard">
               <TiChartBarOutline />
               <ReactTooltip
                 id="dashboard"
@@ -30,10 +31,10 @@ const Sidebar = () => {
               >
                 <span>Dashboard</span>
               </ReactTooltip>
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="transacoes/entradas" data-tip data-for="entradas">
+            <NavLink to="transacoes/entradas" data-tip data-for="entradas">
               <TiArrowUp />
               <ReactTooltip
                 id="entradas"
@@ -43,10 +44,10 @@ const Sidebar = () => {
               >
                 <span>Entradas</span>
               </ReactTooltip>
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="transacoes/saidas" data-tip data-for="saidas">
+            <NavLink to="transacoes/saidas" data-tip data-for="saidas">
               <TiArrowDown />
               <ReactTooltip
                 id="saidas"
@@ -56,7 +57,7 @@ const Sidebar = () => {
               >
                 <span>Saídas</span>
               </ReactTooltip>
-            </a>
+            </NavLink>
           </li>
           <li>
             <a href="/" data-tip data-for="logout">

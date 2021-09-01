@@ -8,6 +8,10 @@ export const Wapper = styled.header`
   grid-area: HEADER;
   display: flex;
 
+  h2 {
+    text-transform: capitalize;
+  }
+
   div {
     margin-left: auto;
   }

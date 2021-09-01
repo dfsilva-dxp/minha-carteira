@@ -35,14 +35,15 @@ export const Nav = styled.nav`
 
     transition: all 0.2s ease-out;
 
-    &:hover {
+    &:hover,
+    &.active {
       background: ${({ theme }) => theme.color.background};
       position: relative;
       color: ${({ theme }) => theme.color.green300};
 
       &::after {
         content: "";
-        width: 2px;
+        width: 4px;
         height: 100%;
         background: ${({ theme }) => theme.color.green300};
         position: absolute;

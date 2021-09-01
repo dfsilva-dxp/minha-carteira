@@ -1,0 +1,295 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "title": "IPVA",
+      "amount": 2500.0,
+      "type": "withdraw",
+      "category": "carro",
+      "frequency": "eventual",
+      "create_at": "2021-02-02"
+    },
+    {
+      "id": 2,
+      "title": "Freelancer",
+      "amount": 600,
+      "type": "deposit",
+      "category": "Trabalho",
+      "frequency": "eventual",
+      "create_at": "2021-02-05"
+    },
+    {
+      "id": 3,
+      "title": "Compras",
+      "amount": 576.25,
+      "type": "withdraw",
+      "category": "Alimentação",
+      "frequency": "recurrent",
+      "create_at": "2021-02-07"
+    },
+    {
+      "id": 4,
+      "title": "Salário",
+      "amount": 10600.0,
+      "type": "deposit",
+      "category": "Trabalho",
+      "frequency": "recurrent",
+      "create_at": "2021-02-10"
+    },
+    {
+      "id": 5,
+      "title": "Conta de águal",
+      "amount": 63,
+      "type": "withdraw",
+      "category": "Casa",
+      "frequency": "recurrent",
+      "create_at": "2021-02-10"
+    },
+    {
+      "id": 6,
+      "title": "Conta de luz",
+      "amount": 142.25,
+      "type": "withdraw",
+      "category": "Casa",
+      "frequency": "recurrent",
+      "create_at": "2021-02-10"
+    },
+    {
+      "id": 7,
+      "title": "Plano de saúde",
+      "amount": 796.36,
+      "type": "withdraw",
+      "category": "Saúde",
+      "frequency": "recurrent",
+      "create_at": "2021-02-10"
+    },
+
+    {
+      "id": 8,
+      "title": "Compras",
+      "amount": 598.52,
+      "type": "withdraw",
+      "category": "Alimentação",
+      "frequency": "recurrent",
+      "create_at": "2021-03-05"
+    },
+    {
+      "id": 9,
+      "title": "Salário",
+      "amount": 10600.0,
+      "type": "deposit",
+      "category": "Trabalho",
+      "frequency": "recurrent",
+      "create_at": "2021-03-10"
+    },
+    {
+      "id": 10,
+      "title": "Conta de águal",
+      "amount": 59,
+      "type": "withdraw",
+      "category": "Casa",
+      "frequency": "recurrent",
+      "create_at": "2021-03-10"
+    },
+    {
+      "id": 11,
+      "title": "Conta de luz",
+      "amount": 152.16,
+      "type": "withdraw",
+      "category": "Casa",
+      "frequency": "recurrent",
+      "create_at": "2021-03-10"
+    },
+    {
+      "id": 12,
+      "title": "Plano de saúde",
+      "amount": 796.36,
+      "type": "withdraw",
+      "category": "Saúde",
+      "frequency": "recurrent",
+      "create_at": "2021-03-10"
+    },
+    {
+      "id": 13,
+      "title": "Freelancer",
+      "amount": 576.25,
+      "type": "deposit",
+      "category": "Trabalho",
+      "frequency": "eventual",
+      "create_at": "2021-04-05"
+    },
+    {
+      "id": 14,
+      "title": "Compras",
+      "amount": 601.36,
+      "type": "withdraw",
+      "category": "Alimentação",
+      "frequency": "recurrent",
+      "create_at": "2021-04-06"
+    },
+    {
+      "id": 15,
+      "title": "Salário",
+      "amount": 10600.0,
+      "type": "deposit",
+      "category": "Trabalho",
+      "frequency": "recurrent",
+      "create_at": "2021-04-10"
+    },
+    {
+      "id": 16,
+      "title": "Conta de águal",
+      "amount": 61,
+      "type": "withdraw",
+      "category": "Casa",
+      "frequency": "recurrent",
+      "create_at": "2021-04-10"
+    },
+    {
+      "id": 17,
+      "title": "Conta de luz",
+      "amount": 140,
+      "type": "withdraw",
+      "category": "Casa",
+      "frequency": "recurrent",
+      "create_at": "2021-04-10"
+    },
+    {
+      "id": 18,
+      "title": "Plano de saúde",
+      "amount": 796.36,
+      "type": "withdraw",
+      "category": "Saúde",
+      "frequency": "recurrent",
+      "create_at": "2021-04-10"
+    },
+
+    {
+      "id": 19,
+      "title": "Compras",
+      "amount": 426.32,
+      "type": "withdraw",
+      "category": "Alimentação",
+      "frequency": "recurrent",
+      "create_at": "2021-05-08"
+    },
+    {
+      "id": 20,
+      "title": "Salário",
+      "amount": 10600.0,
+      "type": "deposit",
+      "category": "Trabalho",
+      "frequency": "recurrent",
+      "create_at": "2021-05-10"
+    },
+    {
+      "id": 21,
+      "title": "Conta de águal",
+      "amount": 59.99,
+      "type": "withdraw",
+      "category": "Casa",
+      "frequency": "recurrent",
+      "create_at": "2021-05-10"
+    },
+    {
+      "id": 22,
+      "title": "Conta de luz",
+      "amount": 142.75,
+      "type": "withdraw",
+      "category": "Casa",
+      "frequency": "recurrent",
+      "create_at": "2021-05-10"
+    },
+    {
+      "id": 23,
+      "title": "Plano de saúde",
+      "amount": 796.36,
+      "type": "withdraw",
+      "category": "Saúde",
+      "frequency": "recurrent",
+      "create_at": "2021-05-10"
+    },
+
+    {
+      "id": 24,
+      "title": "Freelancer",
+      "amount": 1200,
+      "type": "deposit",
+      "category": "Trabalho",
+      "frequency": "eventual",
+      "create_at": "2021-06-05"
+    },
+    {
+      "id": 25,
+      "title": "Compras",
+      "amount": 711.26,
+      "type": "withdraw",
+      "category": "Alimentação",
+      "frequency": "recurrent",
+      "create_at": "2021-06-05"
+    },
+    {
+      "id": 26,
+      "title": "Salário",
+      "amount": 10600.0,
+      "type": "deposit",
+      "category": "Trabalho",
+      "frequency": "recurrent",
+      "create_at": "2021-06-10"
+    },
+    {
+      "id": 27,
+      "title": "Conta de águal",
+      "amount": 57.49,
+      "type": "withdraw",
+      "category": "Casa",
+      "frequency": "recurrent",
+      "create_at": "2021-06-10"
+    },
+    {
+      "id": 28,
+      "title": "Conta de luz",
+      "amount": 147.92,
+      "type": "withdraw",
+      "category": "Casa",
+      "frequency": "recurrent",
+      "create_at": "2021-06-10"
+    },
+    {
+      "id": 29,
+      "title": "Plano de saúde",
+      "amount": 796.36,
+      "type": "withdraw",
+      "category": "Saúde",
+      "frequency": "recurrent",
+      "create_at": "2021-06-10"
+    },
+    {
+      "id": 30,
+      "title": "Burger King",
+      "amount": 67.5,
+      "type": "withdraw",
+      "category": "Alimentação",
+      "frequency": "eventual",
+      "create_at": "2021-06-12"
+    },
+    {
+      "id": 31,
+      "title": "Troca de óleo",
+      "amount": 870.3,
+      "type": "withdraw",
+      "category": "Carro",
+      "frequency": "eventual",
+      "create_at": "2021-06-17"
+    },
+    {
+      "id": 32,
+      "title": "Curso de Reactjs",
+      "amount": 260,
+      "type": "withdraw",
+      "category": "Estudos",
+      "frequency": "eventual",
+      "create_at": "2021-06-22"
+    }
+  ]
+}

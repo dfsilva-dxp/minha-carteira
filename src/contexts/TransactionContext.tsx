@@ -18,6 +18,7 @@ type Transaction = {
 
 type TransactionContextData = {
   transactions: Transaction[];
+  filterTransactionsByType: (type: string) => Transaction[];
 };
 
 export const TransactionContext = createContext({} as TransactionContextData);
@@ -51,8 +52,15 @@ export default function TransactionContextProvider({
     })();
   }, []);
 
+  function filterTransactionsByType(type: string) {
+    const response = transactions.filter((item) => item.type === type);
+    return response;
+  }
+
   return (
-    <TransactionContext.Provider value={{ transactions }}>
+    <TransactionContext.Provider
+      value={{ transactions, filterTransactionsByType }}
+    >
       {children}
     </TransactionContext.Provider>
   );

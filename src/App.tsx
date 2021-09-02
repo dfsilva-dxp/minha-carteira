@@ -7,12 +7,12 @@ import Layout from "./components/Layout";
 import AppRoutes from "./routes";
 
 import { GlobalStyles } from "./styles/global";
-import { light } from "./styles/themes/light";
+import { dark } from "./styles/themes/dark";
 
 function App() {
   return (
     <BrowserRouter>
-      <ThemeProvider theme={light}>
+      <ThemeProvider theme={dark}>
         <GlobalStyles />
         <TransactionContextProvider>
           <Layout>

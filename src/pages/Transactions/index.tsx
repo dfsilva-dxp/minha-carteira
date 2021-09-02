@@ -20,27 +20,23 @@ type Transaction = {
 };
 
 const Transactions = () => {
-  const [transactionsFilter, setTransactionsFilter] = useState<Transaction[]>(
-    []
-  );
+  const [transactions, setTransactions] = useState<Transaction[]>([]);
   const { type } = useParams();
-  const { transactions } = useTransaction();
+  const { filterTransactionsByType } = useTransaction();
 
   const transactionType = type === "saidas" ? "withdraw" : "deposit";
 
   useEffect(() => {
-    const response = transactions.filter(
-      (item) => item.type === transactionType
-    );
+    const response = filterTransactionsByType(transactionType);
 
-    setTransactionsFilter(response);
-  }, [transactionType, transactions]);
+    setTransactions(response);
+  }, [filterTransactionsByType, transactionType]);
 
   return (
     <S.Container>
       <PageContentTitle title={type} />
       <RadioButtonTransactionType />
-      <TransactionTable transactions={transactionsFilter} />
+      <TransactionTable transactions={transactions} />
     </S.Container>
   );
 };

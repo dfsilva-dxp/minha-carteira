@@ -28,7 +28,7 @@ export const Table = styled.table`
       }
 
       &.deposit,
-      &.withdrawal {
+      &.withdraw {
         font-weight: 600;
       }
 
@@ -36,8 +36,12 @@ export const Table = styled.table`
         color: ${({ theme }) => theme.color.green300};
       }
 
-      &.withdrawal {
+      &.withdraw {
         color: ${({ theme }) => theme.color.red500};
+
+        &::before {
+          content: "-";
+        }
       }
 
       &:first-child.eventual,

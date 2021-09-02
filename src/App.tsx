@@ -1,20 +1,24 @@
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
+import TransactionContextProvider from "./contexts/TransactionContext";
+
 import Layout from "./components/Layout";
 import AppRoutes from "./routes";
 
 import { GlobalStyles } from "./styles/global";
-import { light } from "./styles/themes/light";
+import { dark } from "./styles/themes/dark";
 
 function App() {
   return (
     <BrowserRouter>
-      <ThemeProvider theme={light}>
+      <ThemeProvider theme={dark}>
         <GlobalStyles />
-        <Layout>
-          <AppRoutes />
-        </Layout>
+        <TransactionContextProvider>
+          <Layout>
+            <AppRoutes />
+          </Layout>
+        </TransactionContextProvider>
       </ThemeProvider>
     </BrowserRouter>
   );

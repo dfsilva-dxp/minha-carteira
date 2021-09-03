@@ -1,3 +1,7 @@
+import { usePagination } from "../../hooks/usePagination";
+
+import Pagination from "../Pagination";
+
 import * as S from "./styles";
 
 type Transaction = {
@@ -15,6 +19,16 @@ type TransactionTableProps = {
 };
 
 const TransactionTable = ({ transactions }: TransactionTableProps) => {
+  const {
+    currentList,
+    currentPage,
+    end,
+    itemsPerPage,
+    numberOfPages,
+    start,
+    handleSetCurrentPage,
+  } = usePagination(transactions);
+
   return (
     <S.Wrapper>
       <S.Table>
@@ -28,7 +42,7 @@ const TransactionTable = ({ transactions }: TransactionTableProps) => {
         </thead>
         <tbody>
           {transactions &&
-            transactions.map((item) => (
+            currentList.map((item) => (
               <tr key={item.id}>
                 <td className={item.frequency}>{item.title}</td>
                 <td className={item.type}>{item.amount}</td>
@@ -38,6 +52,16 @@ const TransactionTable = ({ transactions }: TransactionTableProps) => {
             ))}
         </tbody>
       </S.Table>
+      {transactions.length > itemsPerPage && (
+        <Pagination
+          numberOfPages={numberOfPages}
+          setCurrentPage={handleSetCurrentPage}
+          totalItems={transactions.length}
+          currentPage={currentPage}
+          start={start}
+          end={end}
+        />
+      )}
     </S.Wrapper>
   );
 };
